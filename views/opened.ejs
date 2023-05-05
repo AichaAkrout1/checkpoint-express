@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .5rem 7%;
+            /* position: fixed; */
+
+        }
+        .header .logo img{
+            width: 100px;
+            height: 100px;
+        }
+        .header .navbar a{
+            margin:0 1rem;
+            font-size: 1.6rem;
+            color: #000000;
+            
+        }
+        .header .navbar a:hover{
+            color: #C98F55;
+        }
+       .fleur-home{
+            display: inline-block;
+            position: relative;
+    
+       }
+       .fleur-home .text{
+        z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-family: Georgia;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 90%;
+    width: 70%;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .cards{
+        display: flex;
+        width: 950px;
+        margin: 140px auto;
+    }
+    .card{
+        width: 300px;
+        background: #fff;
+        margin-right: 20px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+        position: relative;
+    }
+    .card img{
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    .btn-service{
+        background: #a30d53;
+        color: #fff;
+        width: 50%;
+        height: 50px;
+        border: none;
+        border-radius: 20px;
+    }
+    .btn-service:hover{
+        background: #cf4747;
+    }
+    .contact-form{
+    background:url("https://png.pngtree.com/background/20210710/original/pngtree-plant-flowers-background-design-picture-image_975811.jpg");
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 100%;
+    
+}
+ .title{
+    color: #800000;
+    font-size: 3.5rem;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.items{
+    width: 1000px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.items .item{
+    margin: 2%;
+    width: 24.5%;
+    height: 80%;
+    background: white; 
+    box-shadow: 0 4px 8px 0 #800000, 0 6px 20px 0 #800000;
+}
+.items .item i{
+    font-size: 40px;
+    color: #c20329;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+.items .item i:hover{
+    color: 	#800000;
+}
+.items .item .headding{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 5px;
+}
+.items .item .parag{
+    text-align: center;
+    font-size: 15px;
+}
+.items .item a{
+    text-decoration: none;
+}
+.items .item a:hover{
+    text-decoration: underline;
+}
+.contact-us .row {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #fff;
+    margin-top: -80px;
+}
+.contact-us .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+.contact-us .row form h3{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.contact-us .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #800000;
+    border: 1px solid #800000;
+}
+.contact-us .row form .inputBox span{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: .2rem;
+}
+::placeholder{
+    color: #fff;
+}
+.contact-us .row form .inputBox input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    text-transform: none;
+    background: none;
+    border: 1px solid #c20329;
+    color: #fff;
+}
+.btn{
+    color: #fff;
+    background: #800000;
+    cursor: pointer;
+    padding: .9rem 3rem;
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    border: 1px solid #800000;
+}
+.btn:hover{
+    background: rgb(175, 116, 116);
+    color: white;
+    border: 1px solid rgb(175, 116, 116);
+    letter-spacing: .2rem;
+}
+.contact-us .share{
+    text-align: center;
+    padding: 1rem 0;
+}
+.contact-us .share a{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    color: #800000;;
+    border: 1px solid rgba(255,255,255,.3);
+    margin: .3rem;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.contact-us .share a:hover{
+    background: rgb(175, 116, 116);
+    color:#ffffff;
+    
+} 
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="logo">
+            <img src="https://www.milleetunefleurs.tn/wp-content/uploads/2020/05/logo-png.png" alt=""/>
+        </a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#ourservice">Our Services</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+
+    </div>
+    <div class="home" id="home">
+        <div class="fleur-home">
+            <img src="https://www.wallflowerfloraldesign.com/cdn/shop/products/DSC_4330_d9272528-7c52-4ccd-85d8-33305281a780.jpg?v=1621561514" alt=""/>
+            <div class="text">
+                <h1> A Big Thank's Fattouma For Your Help </h1>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="ourservice">
+        <h1 class="title"><span>OUR</span> SERVICES</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9alHghc-k8R3XVS7F9qaR1Mm5GyYtzl5dik_RjLh5FL1flsCtTsgmUZ2jCt73xOHpjVM&usqp=CAU" alt=""/>
+                <h1>Box</h1>
+                <p>From 100Dt</p>
+                <button type="button" class="btn-service">Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="https://luxuryflowersclt.store/wp-content/uploads/2021/12/16.jpg" alt=""/>
+                <h1>Box</h1>
+                <p>From 100Dt</p>
+                <button type="button" class="btn-service">Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/81m7DSjaC7L._AC_SL1500_.jpg" alt=""/>
+                <h1>Box</h1>
+                <p>From 100Dt</p>
+                <button type="button" class="btn-service">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="contact-form" id="contact">
+        <h1 class="title"><span>Contact</span> Us</h1>
+        <div class="items">
+            <div class="item">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4 class="headding">Our main Office</h4>
+                <p class="parag">Gabes/Ghannouch 6021</p>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-phone"></i>
+                <h4 class="headding">Phone number</h4>
+                <p class="parag">+21623514548</p>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-fax"></i>
+                <h4 class="headding">Fax</h4>
+                <p class="parag">1-234-567-8900</p>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-envelope"></i>
+                <h4 class="headding">Email</h4>
+                <a href=""><p class="parag">akroutsabrin1994@gmail.com</p></a>
+            </div>
+
+        </div>
+        <div class="contact-us">
+            <div class="row">
+                <form action="">
+                    <h3>Get In Touch</h3>
+                    <div class="inputBox">
+                        <span class="fas fa-user"></span>
+                        <input type="text" placeholder="name">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-envelope"></span>
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-phone"></span>
+                        <input type="number" placeholder="number">
+                    </div>
+                    <input type="submit" value="Contact Now" class="btn">
+                </form>
+            </div>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
